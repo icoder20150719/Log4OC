@@ -49,18 +49,6 @@ static inline NSString* creatLogDir (){
     }
     return dirc;
 }
-static inline NSString* creatLogFile (NSString* path){
-    NSFileManager *fm = [NSFileManager defaultManager];
-    NSDateFormatter *fmt = [[NSDateFormatter alloc]init];
-    fmt.dateFormat = @"yyyy_MM_dd";
-    NSString *timeStr = [fmt stringFromDate:[NSDate new]];
-    
-    NSString *filePath = [path stringByAppendingString:[NSString stringWithFormat:@"/access_%@_%ld.log",timeStr,(long)__count]];
-    if (![fm fileExistsAtPath:filePath]) {
-        [fm createFileAtPath:filePath contents:nil attributes:nil];
-    }
-    return filePath;
-}
 static inline void rollBackSize () {
     if (fileSize(__filePath) >= __fileSize) {
         __count ++;
@@ -74,6 +62,18 @@ static inline void rollBackSize () {
         setvbuf(__logOutp, NULL, _IONBF, 0);
     }
     
+}
+
+static inline NSString* creatLogFile (NSString* path){
+    NSFileManager *fm = [NSFileManager defaultManager];
+    NSDateFormatter *fmt = [[NSDateFormatter alloc]init];
+    fmt.dateFormat = @"yyyy_MM_dd";
+    NSString *timeStr = [fmt stringFromDate:[NSDate new]];
+    NSString *filePath = [path stringByAppendingString:[NSString stringWithFormat:@"/access_%@_%@.log",timeStr,@(__count)]];
+    if (![fm fileExistsAtPath:filePath]) {
+        [fm createFileAtPath:filePath contents:nil attributes:nil];
+    }
+    return filePath;
 }
 static inline double fileSize (NSString *path) {
     NSFileManager *fm = [NSFileManager defaultManager];
