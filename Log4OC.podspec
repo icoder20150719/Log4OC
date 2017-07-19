@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "Log4OC"
-  s.version      = "0.0.1"
+  s.version      = "0.0.2"
   s.summary      = "a log tool for iOS developer "
 
   s.description  =  "a log tool for iOS developer that can redirect to file and  rollback with file size, used as NSLog"

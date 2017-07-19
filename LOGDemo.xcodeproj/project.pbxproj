@@ -14,12 +14,13 @@
 		179224411F1DD621006EA3F5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1792243F1F1DD621006EA3F5 /* Main.storyboard */; };
 		179224431F1DD621006EA3F5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 179224421F1DD621006EA3F5 /* Assets.xcassets */; };
 		179224461F1DD621006EA3F5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 179224441F1DD621006EA3F5 /* LaunchScreen.storyboard */; };
+		7ECB889A9E04237B6C8901DE /* libPods-LOGDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4147C349E5BB4BFFD5A5DCD4 /* libPods-LOGDemo.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		174D97711F1EE8F000903DA2 /* Log4OC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Log4OC.h; sourceTree = "<group>"; };
 		174D97721F1EE8F000903DA2 /* Log4OC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Log4OC.m; sourceTree = "<group>"; };
-		179224331F1DD621006EA3F5 /* LOGDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LOGDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		179224331F1DD621006EA3F5 /* LOGDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = LOGDemo.app; path = "/Users/xa/Documents/LOGDemo/build/Debug-iphoneos/LOGDemo.app"; sourceTree = "<absolute>"; };
 		179224371F1DD621006EA3F5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		179224391F1DD621006EA3F5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		1792243A1F1DD621006EA3F5 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -29,6 +30,7 @@
 		179224421F1DD621006EA3F5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		179224451F1DD621006EA3F5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		179224471F1DD621006EA3F5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4147C349E5BB4BFFD5A5DCD4 /* libPods-LOGDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LOGDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +38,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7ECB889A9E04237B6C8901DE /* libPods-LOGDemo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -55,16 +58,8 @@
 			isa = PBXGroup;
 			children = (
 				179224351F1DD621006EA3F5 /* LOGDemo */,
-				179224341F1DD621006EA3F5 /* Products */,
+				68450FBDC842C6F062B36DE9 /* Frameworks */,
 			);
-			sourceTree = "<group>";
-		};
-		179224341F1DD621006EA3F5 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				179224331F1DD621006EA3F5 /* LOGDemo.app */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 		179224351F1DD621006EA3F5 /* LOGDemo */ = {
@@ -90,6 +85,14 @@
 				179224371F1DD621006EA3F5 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		68450FBDC842C6F062B36DE9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4147C349E5BB4BFFD5A5DCD4 /* libPods-LOGDemo.a */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,7 +140,7 @@
 				Base,
 			);
 			mainGroup = 1792242A1F1DD621006EA3F5;
-			productRefGroup = 179224341F1DD621006EA3F5 /* Products */;
+			productRefGroup = 1792242A1F1DD621006EA3F5;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
