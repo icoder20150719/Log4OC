@@ -54,7 +54,7 @@ static inline NSString* creatLogFile (NSString* path){
     NSDateFormatter *fmt = [[NSDateFormatter alloc]init];
     fmt.dateFormat = @"yyyy_MM_dd";
     NSString *timeStr = [fmt stringFromDate:[NSDate new]];
-    NSString *filePath = [path stringByAppendingString:[NSString stringWithFormat:@"/access_%@_%02ld.log",timeStr,__count]];
+    NSString *filePath = [path stringByAppendingString:[NSString stringWithFormat:@"/access_%@_%02ld.log",timeStr,(long)__count]];
     if (![fm fileExistsAtPath:filePath]) {
         [fm createFileAtPath:filePath contents:nil attributes:nil];
     }

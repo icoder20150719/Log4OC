@@ -4,7 +4,7 @@ Pod::Spec.new do |s|
   s.version      = "0.0.1"
   s.summary      = "a log tool for iOS developer "
 
-  s.description  = "Log4OC description"
+  s.description  =  "a log tool for iOS developer that can redirect to file and  rollback with file size, used as NSLog"
   s.homepage     = "https://github.com/icoder20150719/Log4OC"
   s.license      = "MIT"
   s.author       = { "xiongan" => "andybbear@163.com" }
