@@ -25,15 +25,16 @@
     //2、在开发中，使用DEBUGLog，设置testLogLevel级别可以在release模式不输出DEBUG无用的输出
     
     //3、可以使用日志回滚功能testRollBack，默认设置了10MB回滚，会产生一个新的日志文件
-    
+
     [self testBase];
+    NSLog(@"NSLog");
 }
 /**
  *  测试日志基本功能
  */
 - (void)testBase {
-    
-    DEBUGLog(@"DEBUGLog");
+    NSString *str = @"hello world";
+    DEBUGLog(@"%@",str);
     INFOLog(@"INFOLog");
     WARNINGLog(@"WARNINGLog");
     ERRORLog(@"ERRORLog");

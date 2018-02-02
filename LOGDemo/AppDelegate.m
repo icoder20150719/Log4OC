@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import <Log4OC/Log4OC.h>
 
 @interface AppDelegate ()
 
@@ -16,9 +17,9 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
-    NSInteger a = 0;
-    NSLog(@"%ld",a);
+//#ifdef __OPTIMIZE__
+//    setLogLevel(LogLevel_ERROR);
+//#endif
     return YES;
 }
 
